@@ -1,0 +1,17 @@
+.contacts {
+  font-size: 18px;
+  line-height: 37px;
+}
+
+.contacts__phone::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../imgs/phone.png);
+  margin-right: 6px;
+}
+
+.contacts__info {
+  padding-top: 20px;
+}

@@ -1,0 +1,31 @@
+.social__links {
+  margin-top: 26px;
+}
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.social__link--vk {
+  background-image: url(../imgs/vk.png);
+}
+
+.social__link--fb {
+  background-image: url(../imgs/fb.png);
+}
+
+.social__link--in {
+  background-image: url(../imgs/in.png);
+}
+
+.social__link--tg {
+  background-image: url(../imgs/tg.png);
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+}

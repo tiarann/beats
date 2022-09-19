@@ -1,0 +1,17 @@
+.footer {
+  background: white;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__contacts {
+  line-height: 24px;
+  margin-bottom: 18px;
+}

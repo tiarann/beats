@@ -1,0 +1,119 @@
+.why {
+  background: white;
+  position: relative;
+}
+
+.why__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.why__content::before {
+  content: "";
+  display: block;
+  background: #C4C4C4;
+  width: 46px;
+  height: 10px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: -8px;
+  right: 20px;
+}
+
+.why__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 52px;
+  padding-top: 101px;
+  margin-bottom: 18px;
+  width: 593px;
+}
+
+.why__info {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 62px;
+  width: 593px;
+  text-align: center;
+}
+
+.why_features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 117px;
+  text-align: center;
+  position: relative;
+}
+.why_features::before {
+  content: "";
+  display: inline-block;
+  width: 67px;
+  height: 21px;
+  background-image: url(../imgs/circles.png);
+  top: 60px;
+  left: 27%;
+  position: absolute;
+}
+.why_features::after {
+  content: "";
+  display: inline-block;
+  width: 67px;
+  height: 21px;
+  background-image: url(../imgs/circles.png);
+  top: 60px;
+  right: 27%;
+  position: absolute;
+}
+
+.why__feature {
+  margin-right: 84px;
+  position: relative;
+}
+.why__feature:last-child {
+  margin-right: 0px;
+}
+
+.why__feature-img {
+  width: 128px;
+  height: 128px;
+  background: #F2F5F4;
+  border-radius: 50%;
+  margin: 0 auto 24px auto;
+  position: relative;
+}
+
+.why__feature-icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.why__heature-title {
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+
+.why__feature-desc {
+  width: 247px;
+  color: #666666;
+  line-height: 19px;
+}

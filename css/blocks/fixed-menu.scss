@@ -1,0 +1,36 @@
+.fixed-menu {
+  position: fixed;
+  top: 223px;
+  right: 56px;
+}
+
+.fixed-menu__item {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: $black;
+  opacity: 0.6;
+  border-radius: 50%;
+  margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    
+    &--active::before {
+      width: 14px;
+      height: 14px;
+      display: block;
+      border-radius: 50%;
+      border: 1px solid $red;
+      opacity: 1;
+      content: "";
+      transform: translate(-25%, -25%);
+    }
+
+    &--active {
+      background: $red;
+      opacity: 1;
+    }
+
+}

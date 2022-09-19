@@ -1,0 +1,15 @@
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 24px;
+  line-height: 39px;
+  font-size: 18px;
+  font-family: 'Alegreya Sans';
+
+    &:last-child {
+      margin-right: 45px;
+    }
+}
