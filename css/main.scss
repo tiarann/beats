@@ -85,7 +85,7 @@ body {
 
 .header {
   margin-top: 30px;
-  margin-bottom: 87px;
+  // margin-bottom: 87px;
   display: flex;
   justify-content: space-between;
 }
@@ -126,6 +126,13 @@ body {
 
 .hero {
   position: relative;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .hero_info {
@@ -174,8 +181,8 @@ $red: #E01F3D;
 
 .hero__pic {
   position: absolute;
-  top: 87px;
-  right: -6px;
+  top: 20%;
+  right: 5%;
 }
 
 .hero__features-section {
@@ -185,30 +192,53 @@ $red: #E01F3D;
 .hero__features {
   display: flex;
   justify-content: space-between;
-  width: 530px;
+  width: 535px;
   margin-bottom: 66px;
 }
 
 .hero__feature {
   display: flex;
   justify-content: space-between;
-  margin-right: 24px;
+  margin-right: 3px;
 }
 
-.hero__feature-icon {
-  width: 40px;
+.hero__feature-text--listening::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
   height: 40px;
+  background-image: url(../imgs/listening.png);
+  margin-right: 11px;
+}
+
+.hero__feature-text--charging::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background-image: url(../imgs/charging.png);
+  margin-right: 11px;
+}
+
+.hero__feature-text--plug::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 39px;
+  background-image: url(../imgs/plug.png);
+  margin-right: 11px;
 }
 
 .hero__feature-text {
   padding-left: 12px;
   line-height: 18px;
+  display: inline-flex;
 }
 
 .fixed-menu {
   position: fixed;
-  top: 223px;
-  right: 56px;
+  top: 299px;
+  right: 58px;
 }
 
 .fixed-menu__item {
@@ -289,7 +319,7 @@ $red: #E01F3D;
     transform: rotate(-45deg);
     position: absolute;
     top: -8px;
-    right: 20px;
+    right: 136px;
   }
 }
 

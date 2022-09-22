@@ -68,7 +68,6 @@ body {
 
 .header {
   margin-top: 30px;
-  margin-bottom: 87px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,6 +117,20 @@ body {
   position: relative;
 }
 
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
 .hero_info {
   width: 400px;
 }
@@ -160,8 +173,8 @@ body {
 
 .hero__pic {
   position: absolute;
-  top: 87px;
-  right: -6px;
+  top: 20%;
+  right: 5%;
 }
 
 .hero__features-section {
@@ -175,7 +188,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 530px;
+  width: 535px;
   margin-bottom: 66px;
 }
 
@@ -186,23 +199,48 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 24px;
+  margin-right: 3px;
 }
 
-.hero__feature-icon {
-  width: 40px;
+.hero__feature-text--listening::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
   height: 40px;
+  background-image: url(../imgs/listening.png);
+  margin-right: 11px;
+}
+
+.hero__feature-text--charging::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background-image: url(../imgs/charging.png);
+  margin-right: 11px;
+}
+
+.hero__feature-text--plug::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 39px;
+  background-image: url(../imgs/plug.png);
+  margin-right: 11px;
 }
 
 .hero__feature-text {
   padding-left: 12px;
   line-height: 18px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .fixed-menu {
   position: fixed;
-  top: 223px;
-  right: 56px;
+  top: 299px;
+  right: 58px;
 }
 
 .fixed-menu__item {
@@ -287,7 +325,7 @@ body {
           transform: rotate(-45deg);
   position: absolute;
   top: -8px;
-  right: 20px;
+  right: 136px;
 }
 
 .why_features {
