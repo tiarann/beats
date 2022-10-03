@@ -20,7 +20,9 @@
             <header class="header">
 
               <a href="#" class="logo">
-                <img src="imgs/logo.png" class="logo__pic">
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" class="logo__pic">
+                  <use xlink:href="imgs/sprite.svg#logo"></use>
+                </svg>
               </a>
   
             <nav class="menu">
@@ -49,10 +51,11 @@
               <div class="hero__pic">
                 <img src="imgs/headphones.png">
               </div>
+              <div class="hero__info--text">
               <h1 class="hero__title">Беспроводные наушники Beats Solo 3</h1>
               <div class="hero__text">Встречайте новую версию наушников из&nbsp;линейки Powerbeats.</div>
-              <a href="#" class="button">ЗАКАЗАТЬ</a></div>
-              <div class="hero__features-section">
+              <a href="#" class="button">ЗАКАЗАТЬ</a></div></div>
+            <div class="hero__features-section">
                 <ul class="hero__features">
                   <li class="hero__feature">
                     <div class="hero__feature-text hero__feature-text--listening">Безупречный звук</div>
@@ -78,7 +81,9 @@
            <ul class="why_features">
             <li class="why__feature">
               <div class="why__feature-img">
-                <img src="imgs/battery.png" class="why__feature-icon">
+                <svg class="why__feature-icon" width="32" height="60" viewBox="0 0 32 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="imgs/sprite.svg#battery"></use>
+                  </svg>
               </div>
               <div class="why__text">
                 <h3 class="why__feature-title">40 часов работы</h3>
@@ -89,7 +94,9 @@
             </li>
             <li class="why__feature">
               <div class="why__feature-img">
-                <img src="imgs/sound.png" class="why__feature-icon">
+                <svg class="why__feature-icon" width="53" height="47" viewBox="0 0 53 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="imgs/sprite.svg#sound"></use>
+                  </svg>
               </div>
               <div class="why__text">
                 <h3 class="why__feature-title">Фирменное звучание</h3>
@@ -100,7 +107,9 @@
             </li>
             <li class="why__feature">
               <div class="why__feature-img">
-                <img src="imgs/time.png" class="why__feature-icon">
+                <svg class="why__feature-icon" width="58" height="60" viewBox="0 0 58 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="imgs/sprite.svg#time"></use>
+                  </svg>
               </div>
               <div class="why__text">
                 <h3 class="why__feature-title">Быстрая зарядка</h3>
@@ -108,6 +117,70 @@
                   <p>Благодаря технологии Fast Fuel всего через 5 минут зарядки вы сможете слушать музыку ещё 3 часа.</p>
                 </div>
               </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section products">
+          <div class="container">
+            <div class="products__slider-arrows">
+              <a href="#" class="products__slider-arrow products__slider-arrow--prev"></a>
+              <a href="#" class="products__slider-arrow products__slider-arrow--next"></a>
+            </div>
+            <ul class="products__list">
+              <li class="products__item">
+                <div class="products__img">
+                  <img src="imgs/product1.png">
+                </div>
+                <div class="products__info">
+                  <div class="products__drop-item">
+                    <ul class="products__drop-menu">
+                      <li class="products__drop-menu-item">
+                        <div class="products__drop-menu-item-name products__drop-menu-item-name--bluetooth"></div>
+                        <div class="products__drop-menu-item-title">Bluetooth</div>
+                        <div class="products__drop-menu-item-info">4.0</div>
+                      </li>
+                      <li class="products__drop-menu-item">
+                        <div class="products__drop-menu-item-name products__drop-menu-item-name--range"></div>
+                        <div class="products__drop-menu-item-title">Дальность </div>
+                        <div class="products__drop-menu-item-info">12 м</div>
+                      </li>
+                      <li class="products__drop-menu-item">
+                        <div class="products__drop-menu-item-name products__drop-menu-item-name--charging"></div>
+                        <div class="products__drop-menu-item-title">Зарядка</div>
+                        <div class="products__drop-menu-item-info">3 ч</div>
+                      </li>
+                      <li class="products__drop-menu-item">
+                        <div class="products__drop-menu-item-name products__drop-menu-item-name--weight"></div>
+                        <div class="products__drop-menu-item-title">Вес</div>
+                        <div class="products__drop-menu-item-info">215гр</div>
+                      </li>
+                      <li class="products__drop-menu-item">
+                        <div class="products__drop-menu-item-name products__drop-menu-item-name--garantee"></div>
+                        <div class="products__drop-menu-item-title">Гарантия</div>
+                        <div class="products__drop-menu-item-info">1 год</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="products__title">beats solo 3. цвет 
+                    «атласное серебро»</h2>
+                    <p class="products__desc">Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                    <ul class="products__features">
+                      <li class="products__feature">
+                        <span class="products__feature-title">Зарядка</span>
+                        <span class="products__feature-number">2  часа</span>
+                      </li>
+                      <li class="products__feature">
+                        <span class="products__feature-title">Вес</span>
+                        <span class="products__feature-number">215 грамм</span>
+                      </li>
+                    </ul>
+                    <div class="products__footer">
+                      <span class="products__price">14 990 ₽</span>
+                      <a href="#" class="button button--products">ЗАКАЗАТЬ</a>
+                    </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -250,16 +323,35 @@
             <div class="socials">
               <ul class="social__links">
                 <li class="social__item">
-                  <a href="#" class="social__link social__link--vk"></a>
+                  <a href="#" class="social__link">
+                    <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="imgs/sprite.svg#vk"></use>
+                      </svg>  
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__link social__link--fb"></a>
+                  <a href="#" class="social__link">
+                    <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                     <use xlink:href="imgs/sprite.svg#fb"></use>
+                      </svg>
+                      
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__link social__link--in"></a>
+                  <a href="#" class="social__link">
+                    <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30"  xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="imgs/sprite.svg#in"></use>
+                      </svg>
+                      
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__link social__link--tg"></a>
+                  <a href="#" class="social__link">
+                    <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="imgs/sprite.svg#tg"></use>
+                      </svg>
+                      
+                  </a>
                 </li>
               </ul>
             </div>
@@ -268,6 +360,20 @@
       </div>
     </footer>
   </div>
+  <!-- <div class="fullscreen-menu active">
+    <a href="#" class="fullscreen-menu__close"></a>
+    <nav class="menu menu--vertical">
+      <ul class="menu__list">
+        <li class="menu__item">О нас</li>
+        <li class="menu__item">Наушники</li>
+        <li class="menu__item">Команда</li>
+        <li class="menu__item">Цены</li>
+        <li class="menu__item">Отзывы</li>
+        <li class="menu__item">Как мы работаем</li>
+        <li class="menu__item">Контакты</li>
+      </ul>
+    </nav>
+  </div> -->
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active">
