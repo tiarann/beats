@@ -359,20 +359,26 @@
       </div>
     </footer>
   </div>
-  <!-- <div class="fullscreen-menu active">
-    <a href="#" class="fullscreen-menu__close"></a>
-    <nav class="menu menu--vertical">
-      <ul class="menu__list">
-        <li class="menu__item">О нас</li>
-        <li class="menu__item">Наушники</li>
-        <li class="menu__item">Команда</li>
-        <li class="menu__item">Цены</li>
-        <li class="menu__item">Отзывы</li>
-        <li class="menu__item">Как мы работаем</li>
-        <li class="menu__item">Контакты</li>
-      </ul>
-    </nav>
-  </div> -->
+  <div class="fullscreen-menu active">
+    <div class="fullscreen-menu__window">
+      <a href="#" class="fullscreen-menu__close">
+        <svg class="fullscreen-menu__close-icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="imgs/sprite.svg#close"></use> 
+        </svg>
+      </a>
+      <nav class="menu menu--vertical">
+        <ul class="menu__list menu__list--vertical">
+          <li class="menu__item menu__item--vertical">О нас</li>
+          <li class="menu__item menu__item--vertical">Наушники</li>
+          <li class="menu__item menu__item--vertical">Команда</li>
+          <li class="menu__item menu__item--vertical">Цены</li>
+          <li class="menu__item menu__item--vertical">Отзывы</li>
+          <li class="menu__item menu__item--vertical">Как мы работаем</li>
+          <li class="menu__item menu__item--vertical">Контакты</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active">
@@ -404,5 +410,22 @@
       </li>
     </ul>
   </nav>
+
+  <script>
+    const openButton = document.querySelector(".hamburger");
+    const menu = document.querySelector(".fullscreen-menu");
+    const closeButton = document.querySelector(".fullscreen-menu__close")
+
+    openButton.addEventListener("click", e => {
+      e.preventDefault();
+      menu.style.display = 'block';
+    })
+
+    closeButton.addEventListener("click", e => {
+      e.preventDefault();
+      menu.style.display = 'none';
+    })
+  </script>
+  
 </body>
 </html>
